@@ -58,7 +58,7 @@ echo -e "${YELLOW}3.Setup카테고리로 이동 후 identification code를 복�
 read -p "위 과정을 완료하신 후 엔터를 눌러주세요: "
 
 read -p "식별자를 입력하세요: " IDENTIFIER
-read -p "PIN을 설정하세요(6자리): " PIN
+read -p "PIN을 설정하세요(6자리숫자): " PIN
 
 # 프로그램 실행
 echo -e "${GREEN}프로그램 실행 중...${NC}"
