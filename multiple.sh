@@ -7,16 +7,9 @@ RED='\033[0;31m'
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
-# 리눅스 아키텍처 확인
-ARCH=$(uname -m)
-if [[ "$ARCH" == "x86_64" ]]; then
-    CLIENT_URL="https://cdn.app.multiple.cc/client/linux/x64/multipleforlinux.tar"
-elif [[ "$ARCH" == "aarch64" ]]; then
-    CLIENT_URL="https://cdn.app.multiple.cc/client/linux/arm64/multipleforlinux.tar"
-else
-    echo -e "${RED}지원하지 않는 아키텍처입니다: $ARCH${NC}"
-    exit 1
-fi
+# 리눅스 아키텍처 확인 (무조건 x86_64로 설정)
+ARCH="x86_64"
+CLIENT_URL="https://cdn.app.multiple.cc/client/linux/x64/multipleforlinux.tar"
 
 # 작업 디렉토리 생성 및 이동
 INSTALL_DIR="/root/multiple"
