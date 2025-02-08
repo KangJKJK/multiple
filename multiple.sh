@@ -7,10 +7,6 @@ RED='\033[0;31m'
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
-# 리눅스 아키텍처 확인 (무조건 x86_64로 설정)
-ARCH="x86_64"
-CLIENT_URL="https://cdn.app.multiple.cc/client/linux/x64/multipleforlinux.tar"
-
 # 작업 디렉토리 생성 및 이동
 INSTALL_DIR="/root/multiple"
 echo -e "${GREEN}작업 디렉토리 생성 중...${NC}"
@@ -18,8 +14,8 @@ mkdir -p $INSTALL_DIR
 cd $INSTALL_DIR
 
 # 클라이언트 다운로드
-echo -e "${GREEN}$CLIENT_URL 에서 클라이언트 다운로드 중...${NC}"
-wget $CLIENT_URL -O multipleforlinux.tar
+echo -e "${GREEN}https://cdn.app.multiple.cc/client/linux/x64/multipleforlinux.tar 에서 클라이언트 다운로드 중...${NC}"
+wget https://cdn.app.multiple.cc/client/linux/x64/multipleforlinux.tar -O multipleforlinux.tar
 
 # 설치 패키지 압축 해제
 echo -e "${GREEN}설치 패키지 압축 해제 중...${NC}"
