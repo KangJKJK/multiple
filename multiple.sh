@@ -14,8 +14,8 @@ mkdir -p $INSTALL_DIR
 cd $INSTALL_DIR
 
 # 클라이언트 다운로드
-echo -e "${GREEN}https://cdn.app.multiple.cc/client/linux/x64/multipleforlinux.tar 에서 클라이언트 다운로드 중...${NC}"
-wget https://cdn.app.multiple.cc/client/linux/x64/multipleforlinux.tar -O multipleforlinux.tar
+echo -e "${GREEN}https://mdeck-download.s3.us-east-1.amazonaws.com/client/linux/x64/multipleforlinux.tar 에서 클라이언트 다운로드 중...${NC}"
+wget https://mdeck-download.s3.us-east-1.amazonaws.com/client/linux/x64/multipleforlinux.tar -O multipleforlinux.tar
 
 # 설치 패키지 압축 해제
 echo -e "${GREEN}설치 패키지 압축 해제 중...${NC}"
